@@ -178,12 +178,12 @@ You will now download the repo containing the services' code and run the DataPro
 3. You will use [Fresh](https://pkg.go.dev/github.com/BUGLAN/fresh) to support auto reloading of the Go server, which we'll use later.  Confirm it is installed by running:
   `go get github.com/pilu/fresh`
   Then start the Go server:
-  `$GOPATH/bin/fresh`
+  `GO111MODULE=off $GOPATH/bin/fresh`
 
   ```
   $ go get github.com/pilu/fresh
 
-  $ $GOPATH/bin/fresh
+  $ GO111MODULE=off $GOPATH/bin/fresh
 
     ...
     10:23:41 app | Welcome to the DataProcessingGoService!
